@@ -1,0 +1,17 @@
+{
+  "name": "travelwise",
+  "version": "1.0.0",
+  "description": "TravelWise - Premium MERN Stack Travel Expense Management System",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "npm run install:server && npm run install:client",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "npx concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "seed": "cd server && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
